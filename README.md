@@ -102,22 +102,22 @@ Process:
 
 ### Method Comparison
 ```
-Approach     │ Results                    │ Pros/Cons
+Approach     │ Results                   │ Pros/Cons
 ─────────────┼───────────────────────────┼──────────────────────────────
-TF-IDF       │ • MRR: 0.4521            │ + Fast, simple deployment
+TF-IDF       │ • MRR: 0.4521             │ + Fast, simple deployment
              │ • Precision@10: 0.6000    │ + Memory efficient
-             │ • Recall@10: 0.7500      │ - Word-based matching only
-             │ • HITS@1: 0.3245         │ - Misses semantic relationships
+             │ • Recall@10: 0.7500       │ - Word-based matching only
+             │ • HITS@1: 0.3245          │ - Misses semantic relationships
 ─────────────┼───────────────────────────┼──────────────────────────────
-Dense Search │ • MRR: 0.5632            │ + Better semantic understanding
+Dense Search │ • MRR: 0.5632             │ + Better semantic understanding
              │ • Precision@10: 0.7000    │ + Handles synonyms well
-             │ • Recall@10: 0.8750      │ - Higher computational cost
-             │ • HITS@1: 0.4521         │ - Requires vector storage
+             │ • Recall@10: 0.8750       │ - Higher computational cost
+             │ • HITS@1: 0.4521          │ - Requires vector storage
 ─────────────┼───────────────────────────┼──────────────────────────────
-Re-Ranking   │ • MRR: 0.6473            │ + Highest precision
+Re-Ranking   │ • MRR: 0.6473             │ + Highest precision
              │ • Precision@10: 0.7500    │ + Best ranking quality
-             │ • Recall@10: 0.8750      │ - Increased latency
-             │ • HITS@1: 0.5234         │ - Complex two-stage pipeline
+             │ • Recall@10: 0.8750       │ - Increased latency
+             │ • HITS@1: 0.5234          │ - Complex two-stage pipeline
 ```
 *Results based on evaluation across all test queries
 
