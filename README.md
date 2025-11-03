@@ -18,6 +18,16 @@ Working with Amazon's ESCI (Exact, Substitute, Complement, Irrelevant) dataset:
   - 50 diverse queries for comprehensive testing
   - Stratified sampling to maintain data distribution
 
+## Interesting findings from the sample
+
+While curating and exploring the 500-row sample, a few notable and sometimes surprising items appeared:
+
+- Exact product code: `usb2aub2ra1m` — this looked like a query but appears to be a specific product identifier (a right-angled USB connector in the sample).
+- Unusual query: "fake urine" (humorous / unexpected user intent surfaced in queries).
+- Plumbing-related query example: "zurn qkipsp 5 port plastic manifold without valves" — shows highly specific technical queries that benefit from strong term/attribute matching.
+
+These examples show why we use a mixed approach in Phase 1 (TF-IDF + dense retrieval + re-ranking): some queries need exact-token matching (product codes, part numbers), while others benefit from semantic understanding and re-ranking to surface the best match.
+
 ## Implemented Methods
 
 ## Phase 1 Implementation
